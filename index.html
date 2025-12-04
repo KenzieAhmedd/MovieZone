@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieZone</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>MovieZone</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <h2>Popular Movies</h2>
+      <div class="movies">
+        <div class="movie">
+          <img src="images/fight-club.jpeg" alt="Fight Club" />
+          <h3>Fight Club</h3>
+          <p>⭐ 8.5/10</p>
+        </div>
+        <div class="movie">
+          <img src="images/download (2).jpeg" alt="Whiplash" />
+          <h3>Whiplash</h3>
+          <p>⭐ 7.9/10</p>
+        </div>
+        <div class="movie">
+          <img src="images/download (1).jpeg" alt="The Holdovers" />
+          <h3>The Holdovers</h3>
+          <p>⭐ 9.1/10</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <div class="about-container">
+        <p>
+          MovieZone is a modern, minimalistic movie website where users can
+          explore movies, rate them, and leave reviews.
+        </p>
+        <div class="team">
+          <div class="team-member">
+            <img src="images/girl1.jpeg" alt="Team Member" />
+            <h3>Kenzie Ahmed</h3>
+            <p>Founder & Developer</p>
+          </div>
+          <div class="team-member">
+            <img src="images/girl2.jpeg" alt="Team Member" />
+            <h3>Basmala Hesham</h3>
+            <p>Content Curator</p>
+          </div>
+        </div>
+        <div class="mission">
+          <h3>Our Mission</h3>
+          <p>
+            Provide movie lovers with an easy-to-use platform to explore and
+            rate films while learning web technologies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="form-container">
+        <form>
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <textarea rows="5" placeholder="Your Message"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <h2>Review a Movie</h2>
+      <div class="form-container">
+        <form>
+          <input type="text" placeholder="Movie Name" />
+          <input type="number" min="1" max="10" placeholder="Rating (1-10)" />
+          <textarea rows="5" placeholder="Write your review..."></textarea>
+          <button type="submit">Submit Review</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 MovieZone</p>
+    </footer>
+  </body>
+</html>

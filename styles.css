@@ -1,0 +1,185 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Fonts */
+body {
+  background-color: #0d0d0d;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  background: #111;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+  border-bottom: 2px solid #6a5acd;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  animation: fadeIn 1s ease;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #6a5acd;
+}
+
+/* Movie Grid */
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 0 40px;
+}
+
+.movie {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #6a5acd;
+}
+
+.movie img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* About Page */
+.about-container {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover img {
+  transform: scale(1.1);
+}
+
+.mission {
+  margin-top: 30px;
+}
+
+/* Forms */
+.form-container {
+  max-width: 600px;
+  margin: auto;
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 12px 0;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #0d0d0d;
+  color: #fff;
+  transition: border 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #6a5acd;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  background: #6a5acd;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background: #483d8b;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #777;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
